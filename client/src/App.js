@@ -5,11 +5,11 @@ import { useDispatch } from 'react-redux';
 import { getPosts } from './actions/posts';
 import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
-import memories from './images/memories.png';
 import useStyles from './styles';
+import Navbar from './components/Navbar/Navbar';
 
 const App = () => {
-	const [ currentId, setCurrentId ] = useState(null);
+	const [currentId, setCurrentId] = useState(null);
 	const classes = useStyles();
 	const dispatch = useDispatch();
 
@@ -17,17 +17,12 @@ const App = () => {
 		() => {
 			dispatch(getPosts());
 		},
-		[ currentId, dispatch ]
+		[currentId, dispatch]
 	);
 
 	return (
 		<Container maxwidth="lg">
-			<AppBar className={classes.appBar} position="static" color="inherit">
-				<Typography className={classes.heading} variant="h2" align="center">
-					Memories
-				</Typography>
-				<img className={classes.image} src={memories} alt="memories" width="60" />
-			</AppBar>
+			<Navbar />
 			<Grow in>
 				<Grid
 					className={classes.mainContainer}
