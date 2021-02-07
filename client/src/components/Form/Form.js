@@ -11,7 +11,7 @@ const Form = ({ currentId, setCurrentId }) => {
 		title: '',
 		message: '',
 		tags: '',
-		seletedFile: ''
+		selectedFile: ''
 	});
 	const post = useSelector((state) => (currentId ? state.posts.find((p) => p._id === currentId) : null));
 	const classes = useStyles();
@@ -41,7 +41,7 @@ const Form = ({ currentId, setCurrentId }) => {
 			title: '',
 			message: '',
 			tags: '',
-			seletedFile: ''
+			selectedFile: ''
 		});
 	};
 
