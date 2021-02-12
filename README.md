@@ -10,7 +10,7 @@ Memories MERN project tutorial from [JavaScript Mastery YouTube](https://youtu.b
 * [Questions](#questions)
 
 ## Description
-This application was built using the MERN project tutorial from [JavaScript Mastery YouTube](https://youtu.be/ngc9gnGgUdA). It allows a user to save a memory with a title, description and an image. 
+This application was built using the MERN project tutorial from [JavaScript Mastery YouTube](https://youtu.be/ngc9gnGgUdA). It allows a user to log in and save a memory with a title, description and an image. Users can also like any memories and update and delete their own memories.
 
 ## Deployed Link
 
